@@ -210,7 +210,7 @@ def process_images_binary(path_to_model_file, path_to_save='colmap_poses.npy'):
     
     with open(path_to_model_file, "rb") as fid:
         num_reg_images = read_next_bytes(fid, 8, "Q")[0]
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         images = {}
         for image_index in range(num_reg_images):
             binary_image_properties = read_next_bytes(
